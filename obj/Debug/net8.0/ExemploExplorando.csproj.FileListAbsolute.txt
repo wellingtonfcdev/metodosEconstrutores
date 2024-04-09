@@ -12,3 +12,4 @@ C:\Users\wellington.costa\Documents\PROJETOS\C#\ExemploExplorando\obj\Debug\net8
 C:\Users\wellington.costa\Documents\PROJETOS\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
 C:\Users\wellington.costa\Documents\PROJETOS\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\wellington.costa\Documents\PROJETOS\C#\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\wellington.costa\Documents\PROJETOS\C#\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.sourcelink.json

@@ -1,14 +1,11 @@
 ﻿using ExemploExplorando.Models;
 
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Wellington";
-p1.Sobrenome = "Feijó";
+Pessoa p1 = new Pessoa(nome:"Wellington",sobrenome:"Feijó");
 
 
-Pessoa p2 = new Pessoa();
-p2.Nome = "Eduardo";
-p2.Sobrenome = "Neves Queiroz";
+Pessoa p2 = new Pessoa(nome:"Eduardo",sobrenome:"Queiroz");
+
 
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.Nome = "Ingles";

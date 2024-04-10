@@ -9,10 +9,20 @@ try
     {
         Console.WriteLine(linha);
     }
-}catch(Exception ex)
+}catch(FileNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+}
+catch(DirectoryNotFoundException ex)
+{
+    Console.WriteLine("Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado." + ex.Message);
+}
+catch(Exception ex)
 {
     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
 }
+
+Console.WriteLine("Chegou aqui.");
 
 
 

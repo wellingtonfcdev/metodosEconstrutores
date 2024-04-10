@@ -1,21 +1,43 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-DateTime data = DateTime.Now;
+
+string dataString = "2024-04-10 18:00";
+
+DateTime.TryParseExact(dataString,"yyyy-MM-dd HH:mm",CultureInfo.InvariantCulture,
+                        DateTimeStyles.None, out DateTime data);
 
 Console.WriteLine(data);
 
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
-
-Console.WriteLine(data.ToShortDateString());
-
-Console.WriteLine(data.ToShortTimeString());
 
 
-Console.WriteLine("\n------------------------------------------\n");
 
-DateTime dt = DateTime.Parse("30/04/2024 18:00");
-Console.WriteLine(dt);
+
+
+
+
+
+
+
+
+
+
+
+// DateTime data = DateTime.Now;
+
+// Console.WriteLine(data);
+
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+
+// Console.WriteLine(data.ToShortDateString());
+
+// Console.WriteLine(data.ToShortTimeString());
+
+
+// Console.WriteLine("\n------------------------------------------\n");
+
+// DateTime dt = DateTime.Parse("30/04/2024 18:00");
+// Console.WriteLine(dt);
 
 
 

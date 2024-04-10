@@ -8,13 +8,40 @@ estados.Add("SP","São Paulo");
 estados.Add("BA","Bahia");
 estados.Add("MG","Minas Gerais");
 
+Console.WriteLine("\n----------------------------\n");
+Console.WriteLine("\nAcessanco valor de uma chave:");
+Console.WriteLine(estados["MG"]);
+
+Console.WriteLine("\n----------------------------\n");
+
 foreach(var item in estados)
 {
     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-    
+
 }
 
+Console.WriteLine("\n------------------------ Remover chave do Dictionary");
+//Remover chave do Dictionary
+estados.Remove("BA");
 
+estados["SP"] = "São Paulo - Valor Alterado"; //Alterar o valor correspondente a uma chave
+foreach(var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+
+}
+
+string chave = "BA";
+Console.WriteLine($"Verificando elemento: {chave}");
+
+if(estados.ContainsKey(chave))
+{
+    Console.WriteLine($"Valor existente: {chave}");
+}
+else
+{
+    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave}");
+}
 
 
 

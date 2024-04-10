@@ -1,27 +1,66 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-//Fila LIFO
-Stack<int> pilha = new Stack<int>();
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
-pilha.Push(1);
 
-foreach(int item in pilha)
+Dictionary<string, string> estados = new Dictionary<string, string>();
+
+estados.Add("SP","São Paulo");
+estados.Add("BA","Bahia");
+estados.Add("MG","Minas Gerais");
+
+foreach(var item in estados)
 {
-    Console.WriteLine($"Lista {item}");
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+    
 }
 
-//Remover objeto da fila
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
 
 
-foreach(int item in pilha)
-{
-    Console.WriteLine(item);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //Fila LIFO
+// Stack<int> pilha = new Stack<int>();
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+// pilha.Push(1);
+
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine($"Lista {item}");
+// }
+
+// //Remover objeto da fila
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+
+
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 

@@ -1,47 +1,57 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
+//Tupla
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+(int, string, string, decimal) tupla = (1,"Wellington","Feijó", 1.80M);
 
-estados.Add("SP","São Paulo");
-estados.Add("BA","Bahia");
-estados.Add("MG","Minas Gerais");
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
 
-Console.WriteLine("\n----------------------------\n");
-Console.WriteLine("\nAcessanco valor de uma chave:");
-Console.WriteLine(estados["MG"]);
 
-Console.WriteLine("\n----------------------------\n");
 
-foreach(var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// Dictionary<string, string> estados = new Dictionary<string, string>();
 
-}
+// estados.Add("SP","São Paulo");
+// estados.Add("BA","Bahia");
+// estados.Add("MG","Minas Gerais");
 
-Console.WriteLine("\n------------------------ Remover chave do Dictionary");
-//Remover chave do Dictionary
-estados.Remove("BA");
+// Console.WriteLine("\n----------------------------\n");
+// Console.WriteLine("\nAcessanco valor de uma chave:");
+// Console.WriteLine(estados["MG"]);
 
-estados["SP"] = "São Paulo - Valor Alterado"; //Alterar o valor correspondente a uma chave
-foreach(var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// Console.WriteLine("\n----------------------------\n");
 
-}
+// foreach(var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 
-string chave = "BA";
-Console.WriteLine($"Verificando elemento: {chave}");
+// }
 
-if(estados.ContainsKey(chave))
-{
-    Console.WriteLine($"Valor existente: {chave}");
-}
-else
-{
-    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave}");
-}
+// Console.WriteLine("\n------------------------ Remover chave do Dictionary");
+// //Remover chave do Dictionary
+// estados.Remove("BA");
+
+// estados["SP"] = "São Paulo - Valor Alterado"; //Alterar o valor correspondente a uma chave
+// foreach(var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+
+// }
+
+// string chave = "BA";
+// Console.WriteLine($"Verificando elemento: {chave}");
+
+// if(estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave}");
+// }
 
 
 

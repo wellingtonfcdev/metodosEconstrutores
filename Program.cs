@@ -1,16 +1,48 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
-using System.Reflection.Metadata;
+using ExemploExplorando.Models;
+using Newtonsoft.Json;
 
-// verificar se um número é par ou ímpar
+Venda v1 = new Venda(1,"Material de escritório", 25.00M);
 
-// if ternário
-int numero = 10;
-bool ehPar = false;
+string serializado = JsonConvert.SerializeObject(v1,Formatting.Indented);
 
-ehPar = numero % 2 == 0;
+Console.WriteLine(serializado);
 
-Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // verificar se um número é par ou ímpar
+
+// // if ternário
+// int numero = 10;
+// bool ehPar = false;
+
+// ehPar = numero % 2 == 0;
+
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
 
 
 

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kSTKhc5zxO9tBQFz8EZFs1cK2QfSnr58LNFH/Zde9NdPJbi/do/s/mjKWQQoz//43klha84BoBenO2HRkGUqNg==",
+  "dgSpecHash": "E7pD3O7SQ6lfY1ItCjR1/emRNlm/5GBbjK4vplI4y2v09kH1eBAuwBthd7UHYVRLGvBzTLNw7wyUjh5vH33jRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\wellington.costa\\Documents\\PROJETOS\\C#\\ExemploExplorando\\ExemploExplorando.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\wellington.costa\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

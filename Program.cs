@@ -1,22 +1,58 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-LeituraArquivo arquivo = new LeituraArquivo();
-// Descarte utiliza o underline _
-var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+Pessoa p1 = new Pessoa("Leonardo","Buta");
 
-if(sucesso)
-{
-    //Console.WriteLine("Quantidade de linhas do arquivo:" + QuantidadeLinhas);
-    foreach(string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
-}
-else
-{
-    Console.WriteLine("Não foi possível ler o arquivo");
-}
+(string nome, string sobrenome) = p1;
+
+Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+// // Descarte utiliza o underline _
+// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if(sucesso)
+// {
+//     //Console.WriteLine("Quantidade de linhas do arquivo:" + QuantidadeLinhas);
+//     foreach(string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 
 
